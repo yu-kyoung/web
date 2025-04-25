@@ -30,4 +30,4 @@ console.log(num2 !== num1); //T 값,타입
 console.clear();
 console.log(num1 >= num2 || num1<100);//True or 또는
 console.log(num1 >= num2 && num1<100);//T&&F=False and 그리고(둘보두 진실)
-console.log(num1 >= num2 && !(num1<100));//T&&T=T  !반대
+console.log(num1 >= num2 && !(num1<100));//T&&!T=T  !반대
