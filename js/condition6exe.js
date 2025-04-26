@@ -13,11 +13,11 @@ let num2 = prompt("숫자를 입력하세요2");
 console.log(num2);
 
 if (num1 == num2) {
-  console.log("2개의 수는 ", (num1), "으로 같습니다.")
+  console.log('2개의 수는 ', (num1), '으로 같습니다.');
 } else if (num1 > num2) {
-  console.log("2개의 수 중에서 큰값은", (num1), "입니다.")
+  console.log('2개의 수 중에서 큰값은 ', (num1), '입니다.');
 } else {
-  console.log("2개의 수 중에서 큰값은", (num2), "입니다.")
+  console.log('2개의 수 중에서 큰값은 ', (num2), '입니다.');
 }
 
 //2번
@@ -27,15 +27,15 @@ let result2 = 40 + Math.floor(Math.random() * 31);
 console.log(result2);
 
 if (result1 == result2) {
-  console.log("2개의 수는 ", (result1), "으로 같습니다.")
+  console.log("2개의 수는 ", (result1), "으로 같습니다.");
 } else if (result1 > result2) {
-  console.log("2개의 수 중에서 큰값은", (result1), "입니다.")
+  console.log("2개의 수 중에서 큰값은", (result1), "입니다.");
 } else {
-  console.log("2개의 수 중에서 큰값은", (result2), "입니다.")
+  console.log("2개의 수 중에서 큰값은", (result2), "입니다.");
 }
 
 // 3번
-let result = 30 + Math.floor(Math.random() * 71); 
+let result = 30 + Math.floor(Math.random() * 71);
 console.log(result);
 
 if (result >= 95) {
@@ -56,4 +56,19 @@ if (result >= 95) {
   console.log("D");
 } else {
   console.log("F");
+}
+
+//4.
+let sum = 0;
+
+for (let i = 0; i < 101; i++) {
+  sum += i;
+}
+console.log('1부터 100까지 더하면', (sum));
+
+//j = 1~50
+for (let j = 1; j < 51; j++) {
+  if (j % 3 === 0) {
+    console.log((j));
+  }
 }
