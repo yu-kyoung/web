@@ -64,7 +64,7 @@ let sum = 0;
 for (let i = 0; i < 101; i++) {
   sum += i;
 }
-console.log('1부터 100까지 더하면', (sum));
+console.log('0부터 100까지 더하면', (sum));
 
 //j = 1~50
 for (let j = 1; j < 51; j++) {
