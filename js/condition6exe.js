@@ -15,13 +15,13 @@ console.log(num2);
 if (num1 == num2) {
   console.log('2개의 수는 ', (num1), '으로 같습니다.');
 } else if (num1 > num2) {
-  console.log('2개의 수 중에서 큰값은 ', (num1), '입니다.');
+  console.log('2개의 수 중에서 큰값은 ' + num1 + '입니다.');
 } else {
-  console.log('2개의 수 중에서 큰값은 ', (num2), '입니다.');
+  console.log('2개의 수 중에서 큰값은 ' + num2 + '입니다.');
 }
 
 //2번
-let result1 = 40 + Math.floor(Math.random() * 31);
+let result1 = 40 + Math.floor(Math.random() * 31); //40<= x <=70
 console.log(result1);
 let result2 = 40 + Math.floor(Math.random() * 31);
 console.log(result2);
