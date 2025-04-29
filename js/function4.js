@@ -38,10 +38,29 @@ console.log(`sum => ${sum}`);
 //배열이름이 ages 27,28,25,30,31,36
 let ages = [27, 28, 25, 30, 31, 36];
 //나이가 제일 많은 사람은?
-let max = 0;//max (초기값 = 0)
-for (let i = 0; i < ages.length; i++) {
-  if (ages[i] > max) {
-    max = ages[i];
+function getMax(param1 = []) {
+  let max = 0; //max (초기값 = 0)
+  for (let i = 0; i < param1.length; i++) {
+    if (param1[i] > max) {
+      max = param1[i];
+    }
   }
+  console.log(`${max}이 제일 나이많음`)
 }
-console.log(`${max}이 제일 나이많음`)
+
+getMax(ages);
+getMax([30, 17, 22, 34, 27]);
+
+//제일 작은값 getMinValue(매개값으로 배열)
+let result = getMinValue([20, 27, 17, 30,15]);
+
+function getMinValue(param = []) {
+  let min = param[0]; //중요 : 최소값에서 0은 안됨
+  for (let i = 0; i < param.length; i++) {
+    if (param[i] < min) {
+      min = param[i];
+    }
+  }
+  return min; //반환
+}
+console.log(`결과는 ${result}`)
