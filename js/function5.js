@@ -5,12 +5,10 @@ let i = 0;
 let exists = false; //존재여부확인
 let search = prompt("검색할 이름을 입력");
 while (true) {
-  if (i < names.length) {
-    i++;
-  } else {
+  if (i == names.length) {
     break;
   }
-  if (search == names[i]) {
+  if (search == names[i++]) {
     exists = true;
     break;
   }

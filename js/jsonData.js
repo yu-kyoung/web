@@ -1,0 +1,22 @@
+// jsonData.js
+
+let json=`[{"id":1,"first_name":"Royall","last_name":"Downing","email":"rdowning0@example.com","gender":"Male","salary":3112},
+{"id":2,"first_name":"Abra","last_name":"Chattock","email":"achattock1@mozilla.com","gender":"Female","salary":6653},
+{"id":3,"first_name":"Fedora","last_name":"Oven","email":"foven2@gravatar.com","gender":"Bigender","salary":5457},
+{"id":4,"first_name":"Sven","last_name":"Henrichs","email":"shenrichs3@e-recht24.de","gender":"Polygender","salary":3652},
+{"id":5,"first_name":"Vikky","last_name":"Weich","email":"vweich4@a8.net","gender":"Female","salary":2846},
+{"id":6,"first_name":"Ellene","last_name":"Harkin","email":"eharkin5@epa.gov","gender":"Female","salary":7513},
+{"id":7,"first_name":"Tanny","last_name":"Andryunin","email":"tandryunin6@desdev.cn","gender":"Male","salary":8041},
+{"id":8,"first_name":"Fidelia","last_name":"Pfaffel","email":"fpfaffel7@un.org","gender":"Female","salary":2903},
+{"id":9,"first_name":"Keri","last_name":"Mardle","email":"kmardle8@over-blog.com","gender":"Female","salary":2334},
+{"id":10,"first_name":"Byrann","last_name":"Spada","email":"bspada9@state.gov","gender":"Male","salary":2497},
+{"id":11,"first_name":"Giulio","last_name":"enzley","email":"genzleya@redcross.org","gender":"Male","salary":7292},
+{"id":12,"first_name":"Torrie","last_name":"Twallin","email":"ttwallinb@phpbb.com","gender":"Female","salary":7805},
+{"id":13,"first_name":"Samuele","last_name":"Janouch","email":"sjanouchc@eepurl.com","gender":"Polygender","salary":6304},
+{"id":14,"first_name":"Brucie","last_name":"Grint","email":"bgrintd@shinystat.com","gender":"Non-binary","salary":3352},
+{"id":15,"first_name":"Loise","last_name":"Sisson","email":"lsissone@stanford.edu","gender":"Female","salary":7548},
+{"id":16,"first_name":"Cazzie","last_name":"Dupree","email":"cdupreef@nbcnews.com","gender":"Male","salary":7936},
+{"id":17,"first_name":"Tamarra","last_name":"Boldecke","email":"tboldeckeg@imdb.com","gender":"Non-binary","salary":6569},
+{"id":18,"first_name":"Orrin","last_name":"Palay","email":"opalayh@paginegialle.it","gender":"Male","salary":3124},
+{"id":19,"first_name":"Anatol","last_name":"McPhee","email":"amcpheei@flickr.com","gender":"Male","salary":7572},
+{"id":20,"first_name":"Samson","last_name":"Dain","email":"sdainj@mail.ru","gender":"Male","salary":5669}]`;
