@@ -8,26 +8,32 @@ console.clear(); //로그지우기
 // for(let emp of data){
 //     console.log(emp);
 // }
+let btnTemplate = "<button class='btn btn-danger' onclick='deleteTr(event)'>삭제</button>"
+//remove
+function deleteTr(e) {
+  console.log(e);
+  console.dir(e.target.parentElement.parentElement);
+  e.target.parentElement.parentElement.remove(); //제거
+}
 
 
 let fields = ['id', 'first_name', 'gender', 'salary'];
 
 //사원목록(table) 출력
-let elist = "<table class='table'>";
-elist += "<thead>";
+let elist = "<table class='table'><thead><tr>";
 for (let field of fields) {
   elist += `<th>${field}</th>`
 }
+elist += `<th>삭제</th>`
 elist += "</tr></thead><tbody>"
+
 
 for (let emp of data) { //let(let i=0; i <data.length; i++)
   // console.log(emp);
   elist += makeTr(emp);
 }
-
-elist += "</tbody></table>"
+elist += "</tbody></table>";
 document.write(elist);
-
 
 
 //////////////////////////
@@ -46,22 +52,19 @@ document.querySelector('button#searchBtn').addEventListener('click', function ()
 });
 
 
-
+//change select 
 document.querySelector('select#selectGender').addEventListener('change', function () {
-  let select = document.querySelector('#selectGender').value;//오타 조심ㅠㅠ
-
+  let select = document.querySelector('#selectGender').value; //오타 조심ㅠㅠ
+ console.log(this);
   let list = "";
   for (let emp of data) {
-    if (select == 'All') {
-      list += makeTr(emp);
-    } else if (select == 'Male' && emp.gender == 'Male') {
-      list += makeTr(emp);
-    } else if (select == 'Female' && emp.gender == 'Female') {
+    if (select == 'All' || select == emp.gender) {
       list += makeTr(emp);
     }
   }
   document.querySelector('table.table>tbody').innerHTML = list;
 });
+
 
 
 
@@ -74,16 +77,14 @@ function makeTr(emp = {}) {
 
   for (let field of fields) {
     // console.log(emp[field]);
-    str += `<td>${emp[field]}</td>`
-
+    str += `<td>${emp[field]}</td>`;
   } // emp[id]==emp.id
-  str +=`<td><button id="deleteTr">삭제</button></td>`  //이것만 지우면
+  str += `<td>${btnTemplate}</td>`;
   str += "</tr>";
   return str;
 }
 
-// function deleteTr() 
-
+// 
 
 console.log(makeTr({
   id: 12,
