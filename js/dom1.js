@@ -51,9 +51,9 @@ function addCallBack() {
   document.getElementById('price').value = 0;
 }
 
-////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
 function createLi(fruitName, fruitPrice) {
-  let li = document.createElement("li"); //<li>
+  let li = document.createElement("li"); //<li> 여기있음
   // li.innerText = "test";
   let sp1 = document.createElement("span");
   sp1.innerText = fruitName;
@@ -76,10 +76,17 @@ function createLi(fruitName, fruitPrice) {
   li.appendChild(sp2);
   li.appendChild(btn);
 
+  //과제 함수 <li>에 마우스 오버 (내가 만든거... 좀 이상한가?)
+  li.addEventListener('mouseover', function () {
+    li.style.backgroundColor = "pink";
+  });
+  li.addEventListener('mouseout', function () {
+    li.style.backgroundColor = ""; 
+  });
+  
   return li;
-  //<li>반환!
+  
 } //end of createLi
-
 
 
 //다른 등록 리스트도 마우스 오버 이벤트
